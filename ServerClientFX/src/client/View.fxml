@@ -8,23 +8,23 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
-      <MenuBar>
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ViewController">
+      <MenuBar fx:id="menubar">
         <menus>
-          <Menu mnemonicParsing="false" text="Connection">
+          <Menu fx:id="connectionMenu" mnemonicParsing="false" text="Connection">
             <items>
-              <MenuItem mnemonicParsing="false" text="IP Configuration" />
-                  <MenuItem mnemonicParsing="false" text="Connect" />
+              <MenuItem fx:id="ipconfigMenu" mnemonicParsing="false" text="IP Configuration" />
+                  <MenuItem fx:id="connectMenu" mnemonicParsing="false" text="Connect" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem fx:id="aboutMenu" mnemonicParsing="false" text="About" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
-      <TextArea disable="true" layoutY="25.0" prefHeight="350.0" prefWidth="500.0" wrapText="true" />
-      <TextField layoutY="375.0" prefHeight="25.0" prefWidth="450.0" />
-      <Button layoutX="450.0" layoutY="375.0" mnemonicParsing="false" prefWidth="50.0" text="send" />
+      <TextArea fx:id="receiveMsgTa" disable="true" layoutY="25.0" prefHeight="350.0" prefWidth="500.0" wrapText="true" />
+      <TextField fx:id="sendMsgTf" layoutY="375.0" prefHeight="25.0" prefWidth="450.0" />
+      <Button fx:id="sendButton" layoutX="450.0" layoutY="375.0" mnemonicParsing="false" prefWidth="50.0" text="send" />
 </Pane>

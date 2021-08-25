@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application {
-	public static String serverIP = "localhost";
+	public static String serverIP = "127.0.0.1";
 	public static int serverPort = 12864;
 	
 	@Override
