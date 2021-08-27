@@ -13,8 +13,9 @@
         <menus>
           <Menu fx:id="connectionMenu" mnemonicParsing="false" text="Connection">
             <items>
-              <MenuItem fx:id="ipconfigMenu" mnemonicParsing="false" text="IP Configuration" />
+             	  <MenuItem fx:id="ipconfigMenu" mnemonicParsing="false" text="IP Configuration" />
                   <MenuItem fx:id="connectMenu" mnemonicParsing="false" text="Connect" />
+                  <MenuItem fx:id="disconnectMenu" mnemonicParsing="false" text="Disconnect" />
             </items>
           </Menu>
           <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
